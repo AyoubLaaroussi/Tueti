@@ -81,8 +81,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql', 
         'HOST': 'localhost',
         'NAME': 'tueti_db',
-        'USER': 'carlos',
-        'PASSWORD': 'admin',
+        'USER': 'ayoub',
+        'PASSWORD': 'ayoub',
         'ATOMIC_REQUESTS': True,
     }
 }

@@ -1,0 +1,38 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Tueti</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/tueti.css' %}">
+        
+    </head>
+    <body>
+        <div class="page-header">
+        
+            <h1>Tueti Red social </h1>
+        </div>
+        
+        <div class="content container">
+            
+            <div class="collapse navbar-collapse" >
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            HOME
+                        </div>
+                        <div class="navbar-header"> 
+                            ABOUT ME!
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-md-8">
+                {% block content %}
+                {% endblock %}
+                </div>
+        </div>
+        
+
+    </body>

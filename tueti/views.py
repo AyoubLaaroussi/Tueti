@@ -4,9 +4,16 @@ from tueti.serializers import TuetSerializer
 
 from rest_framework import generics
 
+from django.views.generic import ListView
+
 
 # Create your views here.
-class TuetListAPI(generics.ListAPIView):
-    queryset = Tuet.objects.all()
-    serializer_class = TuetSerializer
+class TuetList(ListView):
+
+    context_object_name = 'tuets'
+
+    def get_queryset(self):
+        queryset =  Tuet.objects.all()
+        return queryset
+    
 

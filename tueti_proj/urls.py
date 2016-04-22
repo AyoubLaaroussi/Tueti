@@ -19,5 +19,7 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'api/', include('tueti.api_urls')),
     url(r'', include('tueti.urls')),
+
 ]

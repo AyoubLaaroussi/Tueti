@@ -1,0 +1,15 @@
+{% extends 'tueti/base.html' %}
+
+{% block content %}
+    {% for tue in tuets %}
+        <div class="row">
+            <div class="col-md-4 col-xs-12">
+                <div class="date">
+                    <p>Texto: {{ tue.text }}</p>
+                    <p>Autor: {{ tue.author }}</p>
+                    <p>Creado: {{ tue.created }}</p>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock content %}
